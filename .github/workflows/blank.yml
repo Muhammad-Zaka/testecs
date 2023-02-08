@@ -27,7 +27,7 @@ jobs:
       with:
             find: "test1"
             replace: "2"
-            include: "test"
+            include: "test2"
             regex: true
             
     - name: Build & Push docker image to Amazon ECR
