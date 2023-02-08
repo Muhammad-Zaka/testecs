@@ -22,3 +22,10 @@ jobs:
       run: |
         # Build & Push image 
         echo ${{ env.resourceGroup2 }}
+    - name: Update image tag in task-definition.json
+      uses: jacobtomlinson/gha-find-replace@v2
+      with:
+            find: "test1"
+            replace: "2"
+            include: "test"
+            regex: true
