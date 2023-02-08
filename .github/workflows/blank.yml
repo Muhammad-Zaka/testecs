@@ -27,11 +27,11 @@ jobs:
       with:
             find: "test1"
             replace: "2"
-            include: "test2"
+            include: "test"
             regex: true
             
     - name: Build & Push docker image to Amazon ECR
       id: build-image21
       run: |
         # Build & Push image 
-        cat test
+        cat /home/runner/work/testecs/testecs/test
